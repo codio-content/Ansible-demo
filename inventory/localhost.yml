@@ -1,3 +1,10 @@
 all:
   hosts:
     localhost
+  children:
+    database:
+      hosts:
+        localhost
+    web:
+      hosts:
+        localhost

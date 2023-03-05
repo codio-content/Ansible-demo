@@ -1,0 +1,14 @@
+- hosts: web
+  become: yes
+  vars_files:
+    - vars/main.yml
+  roles:
+    - { role: wordpress }  
+
+  tasks:
+    - name: Install Codio file
+      ansible.builtin.copy:
+        content: "{{'{\"preview\": {\"Box URL\": \"https://{{domain3000}}/\"}}'}}"
+        dest: /home/codio/workspace/.codio
+        owner: codio
+        
