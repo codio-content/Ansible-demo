@@ -6,3 +6,8 @@ Install dependencies:
 Play playbook locally:
 
 `ansible-playbook wordpress.yml`
+
+Play roles separately:
+
+`ansible-playbook web.yml -i inventory/localhost.yml `
+`ansible-playbook database.yml -i inventory/localhost.yml `
