@@ -1,0 +1,4 @@
+wordpress_db: wordpress
+wordpress_user: wordpress
+wordpress_password: wordpress_password
+mysql_root_password: super-secure-password
